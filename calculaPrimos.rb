@@ -1,9 +1,9 @@
-puts "Digite um número positivo de até 2 algarismos:"
+puts "Digite um número positivo de até 5 algarismos:"
 num = gets.chomp.strip
 
-#Abarca os números pimos de 5 algarismos até x < 10.403
+#Abarca os números primos de 5 algarismos até x < 10.403
 while num.length > 5 || num.to_i <= 0 do
-    puts "Por favor, digite um número positivo de até 2 algarismos:"
+    puts "Por favor, digite um número positivo de até 5 algarismos:"
     num = gets.chomp.strip
 end
 
@@ -26,7 +26,7 @@ when "7"
 else
 end
 #Tamanho do número em termos de quantidade de algarismos
-#Caso o número contenha 2 algarismos e termine em 1 tenta-se dividir por 2, 3, 5, 7 quando tem mais de 2 dividi-se pelos números primos de 2 algarismos
+#Caso o número contenha 2 algarismos e termine em 1 tenta-se dividir por 2, 3, 5, 7. Quando tem mais de 2 dividi-se pelos números primos de 2 algarismos
 divisores = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
 i = 0
 num = num.to_i
