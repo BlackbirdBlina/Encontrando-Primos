@@ -27,24 +27,47 @@ else
 end
 #Tamanho do número em termos de quantidade de algarismos
 #Caso o número contenha 2 algarismos e termine em 1 tenta-se dividir por 2, 3, 5, 7. Quando tem mais de 2 dividi-se pelos números primos de 2 algarismos
-divisores = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
-i = 0
-num = num.to_i
-while i < divisores.length do
-    divisao = num % divisores[i]
-    if divisao == 0
-        resultado = false
-        break
-    else
-        resultado = true
+if num.length <= 2
+    divisores = [2, 3, 5, 7]
+    i = 0
+    num = num.to_i
+    while i < divisores.length do
+        divisao = num % divisores[i]
+        if divisao == 0
+            resultado = false
+            break
+        else
+            resultado = true
+        end
+        i = i+1
     end
-    i = i+1
-end
-if resultado == false
-    puts "Não é primo!"
+    if resultado == false
+        puts "Não é primo!"
+    else
+        puts "É primo!"
+    end
 else
-    puts "É primo!"
+    divisores = [11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+    i = 0
+    num = num.to_i
+    while i < divisores.length do
+        divisao = num % divisores[i]
+        if divisao == 0
+            resultado = false
+            break
+        else
+            resultado = true
+        end
+        i = i+1
+    end
+    if resultado == false
+        puts "Não é primo!"
+    else
+        puts "É primo!"
+    end
 end
+
+
 
 
 
