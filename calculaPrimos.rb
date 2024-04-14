@@ -27,7 +27,7 @@ if num.length == 2
     divisores = [2, 3, 5, 7, 9]
     i = 0
     num = num.to_i
-    while i < 4 do
+    while i < 5 do
         divisao = num % divisores[i]
         if divisao == 0
             resultado = false
