@@ -26,7 +26,7 @@ when "7"
 else
 end
 #Tamanho do número em termos de quantidade de algarismos
-#Caso o número contenha 2 algarismos e termine em 1 tenta-se dividir por 2, 3, 5, 7. Quando tem mais de 2 dividi-se pelos números primos de 2 algarismos
+#Caso o número contenha 2 algarismos e termine em 1 tenta-se dividir por 2, 3, 5, 7. Quando tem mais de 2 divide-se pelos números primos de 2 algarismos
 if num.length <= 2
     divisores = [2, 3, 5, 7]
     i = 0
